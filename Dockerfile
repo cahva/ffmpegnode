@@ -21,6 +21,7 @@ RUN apt-get update && \
   curl \
   supervisor \
   ghostscript \
+  graphicsmagick \
   python-pip && \
   pip install supervisor-stdout && \
   apt-get clean

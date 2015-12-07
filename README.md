@@ -7,3 +7,4 @@ Changes:
 - Removed CMD as this is baseimage
 - added ghostscript
 - changed nodejs version from 0.12 to 4.2
+- added graphicsmagick
