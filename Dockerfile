@@ -22,6 +22,7 @@ RUN apt-get update && \
   supervisor \
   ghostscript \
   graphicsmagick \
+  ttf-mscorefonts-installer \
   python-pip && \
   pip install supervisor-stdout && \
   apt-get clean
