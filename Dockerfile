@@ -22,9 +22,10 @@ RUN apt-get update && \
   supervisor \
   ghostscript \
   graphicsmagick \
-  ttf-mscorefonts-installer \
   python-pip && \
-  pip install supervisor-stdout && \
+  pip install supervisor-stdout
+
+RUN yes | apt-get install -y ttf-mscorefonts-installer && \
   apt-get clean
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
